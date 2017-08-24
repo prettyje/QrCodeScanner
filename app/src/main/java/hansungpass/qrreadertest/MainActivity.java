@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-   /*     ConnectThread ct = new ConnectThread();
+        ConnectThread ct = new ConnectThread();
         ct.start();
-*/
+
         textView = (TextView)findViewById(R.id.textview);
         Intent intent = new Intent("com.google.zxing.client.android.SCAN");
         intent.putExtra("SCAN_MODE", "ALL");
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     class ConnectThread extends Thread{
         //ProgressBar progressBar = (ProgressBar)findViewById(R.id.qr_bar);
         public void run(){
-            String host = "223.194.134.161";
+            String host = "223.194.159.82";
             int port = 5001;
 
 
